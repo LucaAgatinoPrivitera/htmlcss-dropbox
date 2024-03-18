@@ -351,3 +351,8 @@ footer{
     border-spacing: 32px 32px;
     border-top: 1px solid grey;
 }
+
+.div-centersistemato{
+    margin: auto;
+    padding-bottom: 2rem;
+}
