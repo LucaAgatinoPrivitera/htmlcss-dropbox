@@ -125,6 +125,88 @@ div.opacity-0{
     position: absolute;
 }
 
-section.piano{
+.piano{
+    width: 50%;
     background-color: brown;
+    margin: auto;
+}
+.piano-bottoni{
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 1.3rem;
+}
+
+div.panel{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.panel div{
+    width: 33%;
+    height: 100%;
+    gap: 20px;
+    background-color: aqua;
+}
+.panel-prezzi{
+    width: 33%;
+}
+div.panel div h4{
+    text-align: center;
+    border: 3px solid green;
+    margin-bottom: 2.5rem;
+}
+.panel-prezzi-testo{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+div h4{
+    text-align: center;
+    border: 3px solid green;
+    margin-bottom: 2.5rem;
+}
+.piano-azienda{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.piano-azienda-colonna{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+div.piano-azienda a{
+    height: 100%;
+    border: 2px solid green;
+    color: white;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+/* .container div{ 
+    width: 66%;
+}*/
+.container div.flex-column{
+    width: 33%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.flex-column a{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border: 2px solid red;
 }
