@@ -147,13 +147,14 @@ div.panel{
 }
 
 .panel div{
-    width: 33%;
+    /* width: 33%; */
     height: 100%;
     gap: 20px;
     background-color: aqua;
 }
 .panel-prezzi{
-    width: 33%;
+    width: calc(100% /3);
+    border: 2px solid red;
 }
 div.panel div h4{
     text-align: center;
@@ -231,7 +232,7 @@ div.piano-azienda a{
     margin: auto;
     padding-bottom: 5rem;
 }
-.center div{
+.center- div{
     width: 50%;
 }
 
@@ -256,8 +257,8 @@ div.piano-azienda a{
     height: 100%;
     background-color: yellow;
 }
-.justify-content-center{
-    justify-content: space-around;
+.justify-content-between{
+    justify-content: space-between;
 }
 .centro-azienda{ /*sono mezzo fuso per questo sto usando duemila classi uguali fra loro*/
     width: 50%;
@@ -267,4 +268,86 @@ div.piano-azienda a{
 .bordo a{
     border: 3px solid green;
     text-decoration: none;
+}
+
+.marg-bottom0{
+    margin-bottom: 0;
+}
+.dropbox-business{
+    padding-top: 5rem;
+    background-color: yellowgreen;
+}
+.w50{
+    width: 50%;
+}
+.faq-h2{
+    padding-bottom: 2rem;
+}
+.faq{
+    padding: 1rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.pad-top{
+    padding-top: 3rem;
+}
+
+/* non riesco a farlo displayare per bene*/
+.dspnone{
+    display: none;
+}
+.dspblock:hover{
+    display: block;
+}
+.dspnone:hover{
+    display: block;
+}
+
+footer{
+    background-color: black;
+    /* width: 100%; */
+
+}
+.footer-container{
+    width: 100%;
+    margin: auto;
+    height: 22rem;
+    background-color: black;
+    color: white;
+}
+.footer-container-column{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+    height: 100%;
+}
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    /* width: calc(100% / 5); */
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer-column h3{
+    padding-bottom: 1rem;
+}
+
+.bgfix{
+    background-color: black;
+}
+.width65{
+    width: 65%;
+    margin: auto;
+}
+.pad-bot2rem{
+    padding-bottom: 2rem;
+}
+.lingua{
+    position: relative;
+    border-spacing: 32px 32px;
+    border-top: 1px solid grey;
 }
