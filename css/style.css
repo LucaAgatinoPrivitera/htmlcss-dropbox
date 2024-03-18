@@ -69,15 +69,19 @@ main{
 }
 .main-forcontainer{
     width: 100%;
-    background-color: aqua;
-    padding-top: 5px;
 }
 .main-container{
-    width: 60%;
-    margin: 4rem auto;
+    width: 100%;
+    background-color: aqua;
+    padding-top: 5rem;
+    height: calc(100% - 200px);
 }
 .presentazione{
-    height: 100%;
+    height: 350px;
+    width: 65%;
+    background-color: aqua;
+    margin: auto;
+    margin-bottom: 10rem;
 
 }
 .presentazione-flexcontainer{
@@ -85,13 +89,17 @@ main{
     margin: 2rem 0;
     position: relative;
 }
-
+.cont-image{
+    width: 66%;
+}
 .presentazione-flexcontainer img{
-    width: 75%;
+    height: 350px;
     object-fit: cover;
     opacity: 1;
+    box-shadow: 5px 5px 30px;
 }
 .presentazione-flexcontainer-testo{
+    width: 33%;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -103,7 +111,18 @@ main{
     color: black;
 }
 .arrow{
+    font-size: 3rem;
     color: black;
+}
+.imgout{
+    position: relative;
+    width: 75%;
+}
+div.opacity-0{
+    opacity: 0.5;
+}
+.out{
+    position: absolute;
 }
 
 section.piano{
