@@ -31,7 +31,9 @@ header{
     height: 5rem;
     position: fixed;
     width: 100%;
-    /* background-color: rgb(235, 120, 120); */
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    z-index: 10;
 }
 .header-log{
     position: absolute;
@@ -338,24 +340,67 @@ input[type="checkbox"]{
 }
 .center- div{
     width: 50%;
+    padding: 8rem 0;
+}
+.center- div h2{
+    width: 50%;
+    margin-bottom: 3rem;
 }
 
 .quadrati{
     width: 100%;
-    background-color: green;
+    /* background-color: green; */
     height: 500px;
     display: flex;
 }
 .quadrati-immagini{
-    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    /* width: calc(100% / 3);
     height: 100%;
-    background-color: aqua;
+    background-color: aqua; */
 }
+
+.quadrati-immagini div{
+    width: 50%;
+    height: 50%;
+    display: flex; /*da chiedere perché non funziona senza flex*/
+}
+.quadrati-immagini img{
+    display: block;
+    transform: scale(0.5);
+    margin: auto;
+    filter: grayscale(1) invert(1);
+}
+.quadrati-immagini div:nth-child(1){
+    background-color: greenyellow;
+}
+.quadrati-immagini div:nth-child(2){
+    background-color: brown;
+}
+.quadrati-immagini div:nth-child(3){
+    background-color: lightblue;
+}
+.quadrati-immagini div:nth-child(4){
+    background-color: lightcoral;
+}
+
 .quadrati-centro{
-    width: calc(100% / 3);;
+    width: 50%;
     height: 100%;
-    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem 4rem 2rem;
 }
+.quadrati-centro img{
+    width: 30%;
+    padding-bottom: 5rem;
+}
+.quadrati-centro hr{
+    padding: 0.1rem;
+}
+
 .quadrati-immaginidestra{
     width: calc(100% / 3);
     height: 100%;
@@ -369,8 +414,9 @@ input[type="checkbox"]{
     margin: auto;
     padding-bottom: 5rem;
 }
-.bordo a{
-    border: 3px solid green;
+.bordo{
+    padding: 0.75rem 1.5rem;
+    background-color: white;
     text-decoration: none;
 }
 
@@ -379,7 +425,7 @@ input[type="checkbox"]{
 }
 .dropbox-business{
     padding-top: 5rem;
-    background-color: yellowgreen;
+    background-color: lightskyblue;
 }
 .w50{
     width: 50%;
@@ -435,6 +481,10 @@ footer{
     justify-content: center;
     gap: 8px;
 }
+footer hr{
+    margin-bottom: 2rem;
+    width: 5%;
+}
 
 .footer-column h3{
     padding-bottom: 1rem;
@@ -453,7 +503,7 @@ footer{
 .lingua{
     position: relative;
     border-spacing: 32px 32px;
-    border-top: 1px solid grey;
+    /* border-top: 1px solid grey; */
 }
 
 .div-centersistemato{
