@@ -5,10 +5,23 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
-    font-size: 2rem;
+    font-size: 1.8rem
+}
+h2{
+    font-size: 1.5rem;
 }
 section{
     margin-bottom: 4rem;
+}
+:root{
+    --dropbox-blue: #3BA0F3 
+}
+hr{
+    background-color: lightgrey;
+    color: grey;
+    height: 0.1rem;
+    width: 25%;
+    border: 0px;
 }
 /* Header */
 header{
@@ -18,49 +31,60 @@ header{
     height: 5rem;
     position: fixed;
     width: 100%;
-    background-color: rgb(235, 120, 120);
+    /* background-color: rgb(235, 120, 120); */
 }
 .header-log{
     position: absolute;
-    width: calc(100% - 20px);
+    /* width: calc(100% - 20px); */
+    width: 100%;
     align-items: center;
     display: flex;
     height: 100%;
 }
 .header-log-trademark{
-    background-color: rgb(82, 233, 82);
+    /* background-color: rgb(82, 233, 82); */
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    width: 60px;
-    height: 20px;
     left: 0;
     align-items: center;
+    margin: 0 4rem;
 }
 .header-log-login{
-    background-color: rgb(82, 233, 82);
+    /* background-color: rgb(82, 233, 82); */
     display: flex;
     justify-content: flex-end;
     gap: 20px;
     position: absolute;
     right: 0;
+    margin: 0 4rem;
+    align-items: center;
+}
+.header-log-login a{
+    text-decoration: none;
+    color: black;
 }
 .header-log-login a:nth-child(2){
     color: white;
-    background-color: rgb(0, 195, 255);
+    background-color: var(--dropbox-blue);
+    padding: 0.5rem;
 }
 
 nav{
     height: 100%;
 }
 .header-nav-div{
-    width:80%;
+    width:75%;
     height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    /* background-color: aqua; */
     align-items: center;
+}
+.header-nav-div-infosito a, .header-nav-div-contact a{
+    text-decoration: none;
+    color: black;
 }
 /* Header */
 
@@ -72,16 +96,16 @@ main{
 }
 .main-container{
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(40, 153, 228);
     padding-top: 5rem;
     height: calc(100% - 200px);
 }
 .presentazione{
-    height: 350px;
+    height: 550px;
     width: 65%;
-    background-color: aqua;
+    background-color: rgb(40, 153, 228);
     margin: auto;
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
 
 }
 .presentazione-flexcontainer{
@@ -93,10 +117,11 @@ main{
     width: 66%;
 }
 .presentazione-flexcontainer img{
-    height: 350px;
+    /* height: 350px; rompe la modifica alla width*/
     object-fit: cover;
     opacity: 1;
-    box-shadow: 5px 5px 30px;
+    width: 100%;
+    /* box-shadow: 5px 5px 30px; */
 }
 .presentazione-flexcontainer-testo{
     width: 33%;
@@ -127,56 +152,85 @@ div.opacity-0{
 
 .piano{
     width: 50%;
-    background-color: brown;
+    /* background-color: brown; */
     margin: auto;
 }
 .piano-bottoni{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 2.5rem;
     display: flex;
     gap: 1.3rem;
+    width: 20%;
 }
 
 div.panel{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     height: 600px;
     align-items: center;
     margin-bottom: 6rem;
+    gap: 3rem;
 }
 
 .panel div{
     /* width: 33%; */
-    height: 100%;
+    /* height: 100%; */
     gap: 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
+    
 }
 .panel-prezzi{
-    width: calc(100% /3);
-    border: 2px solid red;
+    width: calc((100% /3) - 2rem);
+    /* border: 2px solid red; */
+    border: 0.1rem solid lightgrey;
 }
 div.panel div h4{
     text-align: center;
-    border: 3px solid green;
+    border: 0.1rem solid lightgrey;
     margin-bottom: 2.5rem;
 }
 .panel-prezzi-testo{
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+    padding-bottom: 2rem;
+}
+.panel-prezzi-testo:last-child{
+    border-bottom: 2px solid grey;
+}
+.highlights{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    padding-bottom: 2rem;
+}
+.highlights .no-icon::before{
+    content: "";
+}
+.highlights p::before{
+    content: "$ ";
+}
+.button-freetrial{
+    padding: 0.7rem 1rem;
+    background-color: var(--dropbox-blue);
+    color: white;
+    text-decoration: none;
 }
 
+.team{
+    border: 0.1rem solid lightgrey;
+}
 div h4{
     text-align: center;
-    border: 3px solid green;
-    margin-bottom: 2.5rem;
+    border: 0.1rem solid lightgrey;
+    padding: 1rem 0;
 }
 .piano-azienda{
     display: flex;
     gap: 1.25rem;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 1rem 1.3rem;
 }
 .piano-azienda-colonna{
     display: flex;
@@ -185,21 +239,49 @@ div h4{
 }
 div.piano-azienda a{
     height: 100%;
-    border: 2px solid green;
     color: white;
+    padding: 0.7rem 1rem;
+    background-color: var(--dropbox-blue);
+    text-decoration: none;
 }
 
 .container{
     width: 50%;
     margin: auto;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+}
+.div-missing{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 2rem;
 }
 /* .container div{ 
     width: 66%;
 }*/
+
+input[type="checkbox"]{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+#tick{
+    border: 3px solid var(--dropbox-blue);
+}
+
+.fix-border{
+    border: 0;
+    text-align: left;
+}
 .container div.flex-column{
-    width: 33%;
+    /* width: 33%; */
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -218,11 +300,33 @@ div.piano-azienda a{
     display: flex;
     flex-direction: column;
 }
+.flex-column img{
+    width: 100%;
+}
+.partner{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.partner img{
+    width: calc( 66% - 2rem);
+    object-fit: fill;
+}
+.top24{
+    position: relative;
+    top: 1.5rem;
+}
+#trova-partner{
+    padding: 0.7rem 1rem;
+    background-color: var(--dropbox-blue);
+    border: 0;
+}
 
 .column-container{
     flex-wrap: wrap;
     justify-content: center;
     /* gap: calc(100% - 5%); */
+    gap: 3rem;
 }
 .container-column{
     width: 30%;

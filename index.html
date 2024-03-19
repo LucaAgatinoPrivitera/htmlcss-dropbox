@@ -11,7 +11,7 @@
     <header>
         <div class="header-fixed">
             <div class="header-log">
-                <img class="header-log-trademark" src="" alt="">
+                <img class="header-log-trademark" src="./img/logo-small.png" alt="">
                 <div class="header-log-login">
                     <a href="#">Accedi</a>
                     <a href="#">Inizia</a>
@@ -51,7 +51,7 @@
                             <a href="#" class="arrow"><i class="fa-solid fa-arrow-down"></i></a>
                         </div>
                         <div class="cont-image">
-                            <img src="https://picsum.photos/700/500" alt="">
+                            <img src="./img/jumbo.png" alt="">
                         </div>
                     </div>
                 </section>
@@ -60,10 +60,10 @@
                            
         <section>
                 <div class="piano">
-                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <h2>Trova il piano business che fa per te</h2>
                     <div class="piano-bottoni">
                         <label class="container">
-                            <input type="checkbox">
+                            <input id="tick" type="checkbox">
                             <span class="checkmark">Annuale</span>
                         </label>
                         <label class="container">
@@ -77,32 +77,83 @@
                             <h4>Singolo</h4>
                             <div class="panel-prezzi-testo">
                                 <h3>Professional</h3>
-                                <p>Prezzo</p>
+                                <p><strong>Prezzo</strong></p>
                                 <p class="prezzo-tempo">/mese</p>
                             </div>
+                            <div class="panel-prezzi-testo">
+                                <p>1 Utente</p>
+                                <p>5 TB di spazio</p>
+                                <p>Funzioni di produttività</p>
+                            </div>
+                            <div class="panel-prezzi-testo">
+                                <a class="button-freetrial" href="#">Prova gratis per 30 giorni</a>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                                <hr>
+                            </div>
+                            
+                            <div class="highlights">
+                                <p class="no-icon"><strong>Punti salienti del piano</strong></p>
+                                <p class="icon">Invia file fino a 100gb</p>
+                                <p class="icon">Cartelle offline su dispositivi mobili</p>
+                            </div>
                         </div>
-                        
+                        <!-- Secondo panel -->
                         <div class="panel-prezzi">
                             <h4>Singolo</h4>
                             <div class="panel-prezzi-testo">
                                 <h3>Professional</h3>
-                                <p>Prezzo</p>
+                                <p><strong>Prezzo</strong></p>
                                 <p class="prezzo-tempo">/mese</p>
+                            </div>
+                            <div class="panel-prezzi-testo">
+                                <p>1 Utente</p>
+                                <p>5 TB di spazio</p>
+                                <p>Funzioni di produttività</p>
+                            </div>
+                            <div class="panel-prezzi-testo">
+                                <a class="button-freetrial" href="#">Prova gratis per 30 giorni</a>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                                <hr>
+                            </div>
+                            
+                            <div class="highlights">
+                                <p class="no-icon"><strong>Punti salienti del piano</strong></p>
+                                <p class="icon">Invia file fino a 100gb</p>
+                                <p class="icon">Cartelle offline su dispositivi mobili</p>
+                                <p class="icon">Invia file fino a 100gb</p>
+                                <p class="icon">Cartelle offline su dispositivi mobili</p>
                             </div>
                         </div>
 
+                        <!-- Terzo panel -->
                         <div class="panel-prezzi">
                             <h4>Singolo</h4>
                             <div class="panel-prezzi-testo">
                                 <h3>Professional</h3>
-                                <p>Prezzo</p>
+                                <p><strong>Prezzo</strong></p>
                                 <p class="prezzo-tempo">/mese</p>
+                            </div>
+                            <div class="panel-prezzi-testo">
+                                <p>1 Utente</p>
+                                <p>5 TB di spazio</p>
+                                <p>Funzioni di produttività</p>
+                            </div>
+                            <div class="panel-prezzi-testo">
+                                <a class="button-freetrial" href="#">Prova gratis per 30 giorni</a>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                                <hr>
+                            </div>
+                            
+                            <div class="highlights">
+                                <p class="no-icon"><strong>Punti salienti del piano</strong></p>
+                                <p class="icon">Invia file fino a 100gb</p>
+                                <p class="icon">Cartelle offline su dispositivi mobili</p>
                             </div>
                         </div>
 
                     </div>
 
-                    <div>
+                    <div class="team">
                         <h4>Team</h4>
                         <div class="piano-azienda">
                             <div class="piano-azienda-colonna">
@@ -120,80 +171,82 @@
 
         <section>
             <div class="container">
-                <div>
-                    <img src="https://picsum.photos/700/500" alt="">
-                </div>
-                <div class="flex-column">
+                <div class="partner">
+                    <img src="./img/partner.png" alt="">
+                    <div class="flex-column top24">
                     <h3>Lorem ipsum dolor sit.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus, repellendus quo quos soluta nisi.</p>
-                    <a href="#">Lorem, ipsum.</a>
-                </div>    
+                    <a id="trova-partner" href="#">Lorem, ipsum.</a>
+                </div>
+                </div>
+                    
             </div>
         </section>
 
         <section>
+            <h2 class="div-missing">Esegui più operazioni</h2>
             <div class="container column-container">
                 <div class="container-column">
-                    <h2>Lorem, ipsum dolor.</h2>
+
                     <div class="flex-row">
                         <div class="flex-column">
-                            <img src="" alt="">
-                            <h4>Lorem, ipsum dolor.</h4>
+                            <img src="./img/business-feature-switching-tools.png" alt="">
+                            <h4 class="fix-border">Lorem, ipsum dolor.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta ea, fugiat architecto possimus dolor.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-column">
-                    <h2>Lorem, ipsum dolor.</h2>
+
                     <div class="flex-row">
                         <div class="flex-column">
-                            <img src="" alt="">
-                            <h4>Lorem, ipsum dolor.</h4>
+                            <img src="./img/business-feature-send-files-it.png" alt="">
+                            <h4 class="fix-border">Lorem, ipsum dolor.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta ea, fugiat architecto possimus dolor.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-column">
-                    <h2>Lorem, ipsum dolor.</h2>
+
                     <div class="flex-row">
                         <div class="flex-column">
-                            <img src="" alt="">
-                            <h4>Lorem, ipsum dolor.</h4>
+                            <img src="./img/business-feature-coordinate-it.png" alt="">
+                            <h4 class="fix-border">Lorem, ipsum dolor.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta ea, fugiat architecto possimus dolor.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-column">
-                    <h2>Lorem, ipsum dolor.</h2>
+
                     <div class="flex-row">
                         <div class="flex-column">
-                            <img src="" alt="">
-                            <h4>Lorem, ipsum dolor.</h4>
+                            <img src="./img/business-feature-integrations-it.png" alt="">
+                            <h4 class="fix-border">Lorem, ipsum dolor.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta ea, fugiat architecto possimus dolor.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-column">
-                    <h2>Lorem, ipsum dolor.</h2>
+
                     <div class="flex-row">
                         <div class="flex-column">
-                            <img src="" alt="">
-                            <h4>Lorem, ipsum dolor.</h4>
+                            <img src="./img/business-feature-multi-device.png" alt="">
+                            <h4 class="fix-border">Lorem, ipsum dolor.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta ea, fugiat architecto possimus dolor.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-column">
-                    <h2>Lorem, ipsum dolor.</h2>
+
                     <div class="flex-row">
                         <div class="flex-column">
-                            <img src="" alt="">
-                            <h4>Lorem, ipsum dolor.</h4>
+                            <img src="./img/business-feature-security.png" alt="">
+                            <h4 class="fix-border">Lorem, ipsum dolor.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta ea, fugiat architecto possimus dolor.</p>
                         </div>
                     </div>
