@@ -88,6 +88,14 @@ nav{
     text-decoration: none;
     color: black;
 }
+.header-nav-div-infosito{
+    display: flex;
+    gap: 2rem;
+}
+.header-nav-div-contact{
+    display: flex;
+    gap: 2rem;
+}
 /* Header */
 
 /* Main */
@@ -169,7 +177,7 @@ div.panel{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 600px;
+    /* height: 600px; */
     align-items: center;
     margin-bottom: 6rem;
     gap: 3rem;
@@ -189,7 +197,7 @@ div.panel{
 }
 div.panel div h4{
     text-align: center;
-    border: 0.1rem solid lightgrey;
+    /* border: 0.1rem solid lightgrey; */
     margin-bottom: 2.5rem;
 }
 .panel-prezzi-testo{
@@ -225,7 +233,7 @@ div.panel div h4{
 }
 div h4{
     text-align: center;
-    border: 0.1rem solid lightgrey;
+    border-bottom: 0.1rem solid lightgrey;
     padding: 1rem 0;
 }
 .piano-azienda{
