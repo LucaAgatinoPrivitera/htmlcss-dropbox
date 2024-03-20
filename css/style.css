@@ -420,6 +420,7 @@ input[type="checkbox"]{
     height: 50%;
     display: flex; /*da chiedere perché non funziona senza flex*/
 }
+
 .quadrati-immagini img{
     display: block;
     width: 100%;
@@ -429,15 +430,19 @@ input[type="checkbox"]{
 }
 .quadrati-immagini div:nth-child(1){
     background-color: rgb(140, 211, 7);
+    border: 10px solid rgb(120, 191, 0);
 }
 .quadrati-immagini div:nth-child(2){
     background-color: rgb(131, 26, 0);
+    border: 10px solid rgb(121, 16, 0);
 }
 .quadrati-immagini div:nth-child(3){
     background-color: rgb(67, 187, 228);
+    border: 10px solid rgb(57, 177, 218);
 }
 .quadrati-immagini div:nth-child(4){
     background-color: rgb(252, 47, 47);
+    border: 10px solid rgb(192, 0, 0);
 }
 
 .quadrati-centro{
@@ -491,7 +496,13 @@ input[type="checkbox"]{
 .faq{
     padding: 1rem 0;
     border-top: 1px solid black;
+    padding: 2rem 0;
+}
+.faq:nth-child(4){
     border-bottom: 1px solid black;
+}
+.faq:hover{
+    display: block;
 }
 
 .pad-top{
@@ -508,11 +519,19 @@ input[type="checkbox"]{
 .dspnone:hover{
     display: block;
 }
+.showhover:hover + .hide{
+    display: block;
+}
+.hide{
+    display: none;
+    margin-top: 1rem;
+}
 
 footer{
     background-color: black;
     /* width: 100%; */
 
+    
 }
 .footer-container{
     width: 100%;
