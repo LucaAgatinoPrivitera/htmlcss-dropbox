@@ -234,6 +234,45 @@ div.panel div h4{
     /* border: 0.1rem solid lightgrey; */
     margin-bottom: 2.5rem;
 }
+.panel-prezzi h4:before { 
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+.uno::before, .due::before, .tre::before{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+.uno::before{
+    content: "\f007";
+}
+.due::before{
+    content: "\e533";
+}
+.tre::before{
+    content: "\f1ad";
+}
+.space::before{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    font-weight: 900;
+    margin-right: 0.5rem;
+    content: "\f07b";
+}
+.folder::before{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    font-weight: 900;
+    margin-right: 0.5rem;
+    content: "\f1e0";
+}
 .panel-prezzi-testo{
     display: flex;
     flex-direction: column;
@@ -255,12 +294,12 @@ div.panel div h4{
 }
 .highlights p.icon::before{
     font-family: "Font Awesome 5 Free";
-    content: "\f095";
+    content: "\f00c";
     display: inline-block;
     padding-right: 3px;
-    vertical-align: middle;
     font-weight: 900;
     margin-right: 1rem;
+    color: var(--dropbox-blue);
 }
 .button-freetrial{
     padding: 0.7rem 1rem;
@@ -271,6 +310,14 @@ div.panel div h4{
 
 .team{
     border: 0.1rem solid lightgrey;
+}
+.team-icon::before{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    font-weight: 900;
+    margin-right: 0.5rem;
+    content: "\f1ad";
 }
 div h4{
     text-align: center;
@@ -435,6 +482,15 @@ input[type="checkbox"]{
     /* margin: auto; */
     filter: grayscale(1) invert(1);
 }
+.quadrati-immagini img:hover{
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
+}
+.quadrati-immagini img:not(:hover){
+    transform: scale(1);
+    transition: 0.2s ease-in-out;
+}
+
 .quadrati-immagini div:nth-child(1){
     background-color: rgb(140, 211, 7);
     border: 10px solid rgb(120, 191, 0);
@@ -533,6 +589,10 @@ input[type="checkbox"]{
     display: none;
     margin-top: 1rem;
 }
+.showhover:hover span{
+    transform: rotate(180deg);
+    transition: 0.1s ease-in-out;
+}
 
 footer{
     background-color: black;
@@ -584,12 +644,32 @@ footer hr{
 .lingua{
     position: relative;
     border-spacing: 32px 32px;
+    color: grey;
     /* border-top: 1px solid grey; */
+}
+.lingua::before{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    font-weight: 900;
+    margin-right: 0.5rem;
+    content: "\f57d";
+}
+.fa-arrow-up{
+    display: inline-block;
+    padding-right: 3px;
+    font-weight: 900;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    vertical-align: baseline;
 }
 
 .div-centersistemato{
     margin: auto;
     padding-bottom: 2rem;
+}
+.div-centersistemato a{
+    color: blue;
 }
 
 .dspinlblk{
