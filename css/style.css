@@ -250,6 +250,9 @@ div.panel div h4{
     padding-bottom: 2rem;
 }
 
+.panel-prezzi-testo hr{
+    margin-top: 4rem;
+}
 .highlights p.icon::before{
     font-family: "Font Awesome 5 Free";
     content: "\f095";
@@ -428,7 +431,7 @@ input[type="checkbox"]{
 .quadrati-immagini img{
     display: block;
     width: 100%;
-    padding: 6rem;    /* transform: scale(0.5); */
+    padding: 5rem;    /* transform: scale(0.5); */
     /* margin: auto; */
     filter: grayscale(1) invert(1);
 }
