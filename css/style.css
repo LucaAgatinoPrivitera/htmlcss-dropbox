@@ -111,11 +111,11 @@ main{
     height: calc(100% - 200px);
 }
 .presentazione{
-    height: 550px;
+    height: 350px; /*550px*/
     width: 65%;
     background-color: rgb(40, 153, 228);
     margin: auto;
-    margin-bottom: 13rem;
+    margin-bottom: 25rem; /*13rem*/
 
 }
 .presentazione-flexcontainer{
@@ -178,7 +178,7 @@ div.panel{
     flex-direction: row;
     flex-wrap: wrap;
     /* height: 600px; */
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 6rem;
     gap: 3rem;
 }
@@ -322,6 +322,11 @@ input[type="checkbox"]{
     width: calc( 66% - 2rem);
     object-fit: fill;
 }
+
+.partner-divdestro p{
+    padding: 1rem 0rem 3rem 0rem;
+}
+
 .top24{
     position: relative;
     top: 1.5rem;
@@ -330,6 +335,10 @@ input[type="checkbox"]{
     padding: 0.7rem 1rem;
     background-color: var(--dropbox-blue);
     border: 0;
+    border: 1px solid grey;
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .column-container{
@@ -377,7 +386,8 @@ input[type="checkbox"]{
 }
 .quadrati-immagini img{
     display: block;
-    transform: scale(0.5);
+    width: 100%;
+    padding: 6rem;    /* transform: scale(0.5); */
     margin: auto;
     filter: grayscale(1) invert(1);
 }
@@ -403,10 +413,10 @@ input[type="checkbox"]{
 }
 .quadrati-centro img{
     width: 30%;
-    padding-bottom: 5rem;
 }
 .quadrati-centro hr{
     padding: 0.1rem;
+    margin: 3rem 0;
 }
 
 .quadrati-immaginidestra{
