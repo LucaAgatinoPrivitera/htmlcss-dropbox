@@ -23,7 +23,10 @@ section{
     margin-bottom: 4rem;
 }
 :root{
-    --dropbox-blue: #3BA0F3 
+    --dropbox-blue: #3BA0F3;
+    --dropbox-blue-hover: #2881c5;
+    --dropbox-blue-hover-shadow: 0px 0px 0.3rem black;
+    
 }
 hr{
     background-color: lightgrey;
@@ -179,6 +182,10 @@ nav{
     padding: 1rem;
     background-color: var(--dropbox-blue);
 }
+.dspblock a:hover:nth-child(1){
+    background-color: var(--dropbox-blue-hover);
+    box-shadow: var(--dropbox-blue-hover-shadow);
+}
 .arrow{
     font-size: 3rem;
     color: black;
@@ -307,7 +314,10 @@ div.panel div h4{
     color: white;
     text-decoration: none;
 }
-
+.button-freetrial:hover{
+    background-color: var(--dropbox-blue-hover);
+    box-shadow: var(--dropbox-blue-hover-shadow);
+}
 .team{
     border: 0.1rem solid lightgrey;
 }
@@ -342,6 +352,10 @@ div.piano-azienda a{
     padding: 0.7rem 1rem;
     background-color: var(--dropbox-blue);
     text-decoration: none;
+}
+div.piano-azienda a:hover{
+    background-color: var(--dropbox-blue-hover);
+    box-shadow: var(--dropbox-blue-hover-shadow);
 }
 
 .container{
@@ -429,8 +443,10 @@ input[type="checkbox"]{
     background-color: transparent;
     text-decoration: none;
 }
-
-.column-container{
+#trova-partner:hover{
+    box-shadow: var(--dropbox-blue-hover-shadow);
+}
+    .column-container{
     flex-wrap: wrap;
     justify-content: center;
     /* gap: calc(100% - 5%); */
@@ -541,6 +557,9 @@ input[type="checkbox"]{
     padding: 0.75rem 1.5rem;
     background-color: white;
     text-decoration: none;
+}
+.bordo:hover{
+    box-shadow: var(--dropbox-blue-hover-shadow);
 }
 
 .marg-bottom0{
